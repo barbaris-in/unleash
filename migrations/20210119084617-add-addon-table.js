@@ -5,8 +5,9 @@ exports.up = function(db, cb) {
            id          SERIAL PRIMARY KEY,
            provider    text not null,
            description text,
-           icon        text,
+           enabled     boolean default true,
            parameters  json,
+           events      json,
            created_at  TIMESTAMP WITH TIME ZONE DEFAULT now()
        );
       `,

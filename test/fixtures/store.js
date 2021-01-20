@@ -9,6 +9,7 @@ const eventStore = require('./fake-event-store');
 const strategyStore = require('./fake-strategies-store');
 const contextFieldStore = require('./fake-context-store');
 const settingStore = require('./fake-setting-store');
+const addonStore = require('./fake-addon-store');
 
 module.exports = {
     createStores: () => {
@@ -29,6 +30,7 @@ module.exports = {
             strategyStore: strategyStore(),
             contextFieldStore: contextFieldStore(),
             settingStore: settingStore(),
+            addonStore: addonStore(),
         };
     },
 };
