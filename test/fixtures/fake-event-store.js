@@ -11,6 +11,7 @@ class EventStore extends EventEmitter {
 
     store(event) {
         this.events.push(event);
+        this.emit(event.type, event);
         return Promise.resolve();
     }
 
