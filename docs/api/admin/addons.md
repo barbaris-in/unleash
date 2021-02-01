@@ -33,7 +33,7 @@ Returns a list of _configured addons_ and available _addon providers_.
       "description": "default",
       "parameters": {
         "defaultChannel": "integration-demo-instance",
-        "url": "https://hooks.slack.com/services/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"
+        "url": "https://hooks.slack.com/someurl"
       },
       "events": ["feature-created", "feature-updated"]
     }
