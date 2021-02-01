@@ -8,6 +8,9 @@
       "activation_strategy": {
         "title": "Activation Strategies"
       },
+      "api/admin/addons": {
+        "title": "/api/admin/addons"
+      },
       "api/admin/events": {
         "title": "/api/admin/events"
       },
