@@ -9,6 +9,14 @@ module.exports = () => {
             _addons.push(a);
             return a;
         },
+        update: async (id, value) => {
+            _addons[id] = value;
+            Promise.resolve(value);
+        },
+        delete: async id => {
+            _addons.splice(id, 1);
+            Promise.resolve();
+        },
         get: async id => {
             return _addons.find(id);
         },
